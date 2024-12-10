@@ -1,0 +1,18 @@
+:root{
+    --primary : #a6aa64;
+    --secondary: #b1d0a9;
+    --accent: #7fb884;
+    --white-500: #fbfcf8;
+    --blac-500: #0a0a05;
+    --text-color-500: #282e33;
+    --text: 'Parkinsans';
+}
+@font-face {
+    font-family:"Parkinsans" ;
+    src: url("../font/Parkinsans.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
