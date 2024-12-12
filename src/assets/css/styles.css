@@ -11,7 +11,15 @@
     --accent-800:#334a35;
     --accent-900:#19251a;
     --white-500: #fbfcf8;
-    --blac-500: #0a0a05;
+    --bg-400:#fcfdfa;
+    --bg-300:#fdfefc;
+    --bg-200:#fefefd;
+    --bg-100:#ffffff;
+    --bg-600:#dcddda;
+    --bg-700:#bebebc;
+    --bg-800:#9f9f9e;
+    --bg-900:#808080;
+    --black-500: #0a0a05;
     --text-color-500: #282e33;
     --text: 'Parkinsans';
     --text-title:'Ubuntu';

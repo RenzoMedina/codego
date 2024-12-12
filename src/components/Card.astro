@@ -1,0 +1,35 @@
+---
+const {url, title,alt, content} = Astro.props
+---
+<div class="card">
+    <img src={url} alt={alt}>
+    <p>{title}</p>
+    <p>{content}</p>
+</div>
+<style>
+    .card{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-family: var(--text);
+        padding: 0 .96rem;
+        margin-top: 1rem;
+    }
+    .card:last-child{
+        border-right: none;
+    }
+    .card img{
+        width: 150px;
+        margin-bottom: .98rem;
+        aspect-ratio: 3/3;
+        object-fit: contain;
+    }
+    .card p:nth-of-type(1){
+        font-size: 1.45rem;
+        font-weight: 600;
+    }
+    .card p:last-child{
+        font-size: .90rem;
+    }
+</style>
