@@ -1,0 +1,66 @@
+---
+import { APP_NAME } from "../assets/js/data"
+import Button from "./Button.astro"
+---
+<secction class="main">
+    <div class="cardMain">
+        <h1>{APP_NAME}</h1>
+        <p>tu página web, lista para despegar.</p>
+        <p>¿Necesitas una página web pero no tienes tiempo ni conocimientos técnicos? ¡No te preocupes! En code-go nos encargamos de todo el proceso, desde el diseño hasta el lanzamiento.</p>
+        <Button name="Contáctanos" url="/" class="accent"/>
+    </div>
+    <div class="cardMain">
+        <img src="/src/assets/img/imagen-main.png" alt="imageMain">
+    </div>
+</secction>
+
+<style>
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+    .cardMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: var(--text);
+        text-align: center;
+        p{
+            margin-bottom: .65rem;
+        }
+    }
+    .cardMain h1{
+        font-size: 5rem;
+        font-family: var(--text-title);
+    }
+    .cardMain p:nth-of-type(1){
+        font-family: var(--text-title);
+        font-size: 2rem;
+        font-weight: 600;
+        &::first-letter{
+            text-transform: uppercase;
+        }
+    }
+    .cardMain p:nth-of-type(2){
+        font-family: var(--text-content);
+        font-size: 1.13rem;
+        line-height: 25px;
+        width: 70%;
+    }
+
+    .cardMain img{
+        width: 400px;
+        animation: up infinite 3s ease-in-out;
+    }
+    @keyframes up {
+        0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+
+    }
+</style>

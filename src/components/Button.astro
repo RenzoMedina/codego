@@ -1,0 +1,43 @@
+---
+const {class : className, name, url}= Astro.props
+---
+<a class={`button ${className}`} href={url} >{name}</a>
+<style>
+    .button{
+        font-family: var(--text);
+        text-decoration: none;
+        color: var(--text-color-500);
+        padding: .56rem;
+        border-radius: 10px;
+        font-weight: 600;
+        border: 1px solid #FFFFFF;
+        transition: all .2s ease;
+    }
+    .accent{
+        background: var(--accent);
+        color: var(--accent-800);
+        &:hover{
+        background: none;
+        border-color:  var(--accent-800);
+        }
+    }
+
+    .ghost-accent{
+        background: none;
+        color: var(--accent-700);
+        border-color: var(--accent-800);
+        &:hover{
+            background: var(--accent);
+            border-color: var(--accent);
+        }
+    }
+    .light-accent{
+        background: var(--accent-200);
+        border: 1px solid var(--accent-200);
+        color:var(--accent-700);
+        &:hover{
+            background: var(--accent-100);
+            color:var(--accent-600)
+        }
+    }
+</style>

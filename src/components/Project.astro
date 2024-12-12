@@ -1,0 +1,45 @@
+---
+import CardProject from "./CardProject.astro"
+import Button from "../components/Button.astro"
+---
+<secction>
+    <div class="project" id="project">
+    <p>Nuestro Proyectos</p>
+    <div class="card">
+       <div class="card-body">
+        <CardProject title="Nombre 1" des="Este es un proyecto"/>
+        <Button name="Ver más.." class="ghost-accent" url="/"/>
+    </div>
+       <div class="card-body">
+        <CardProject title="Nombre 1" des="Este es un proyecto"/>
+        <Button name="Ver más.." class="ghost-accent" url="/"/>
+       </div>
+       <div class="card-body">
+        <CardProject title="Nombre 1" des="Este es un proyecto"/>
+        <Button name="Ver más.." class="ghost-accent" url="/"/>
+       </div>
+       <div class="card-body">
+        <CardProject title="Nombre 1" des="Este es un proyecto"/>
+        <Button name="Ver más.." class="ghost-accent" url="/"/>
+       </div>
+       <div class="card-body">
+        <CardProject title="Nombre 1" des="Este es un proyecto"/>
+        <Button name="Ver más.." class="ghost-accent" url="/"/>
+       </div>
+    </div>
+    </div>
+</secction>
+<style>
+    .project{
+        padding: 0 5.6rem;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .card-body{
+        border: 1px solid var(--text-color-500);
+        padding: 1rem;
+    }
+</style>

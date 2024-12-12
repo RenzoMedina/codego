@@ -1,15 +1,41 @@
 :root{
     --primary : #a6aa64;
     --secondary: #b1d0a9;
+    --accent-100:#e5f1e6;
+    --accent-200:#cce3ce;
+    --accent-300:#b2d4b5;
+    --accent-400:#99c69d;
     --accent: #7fb884;
+    --accent-600:#66936a;
+    --accent-700:#4c6e4f;
+    --accent-800:#334a35;
+    --accent-900:#19251a;
     --white-500: #fbfcf8;
-    --blac-500: #0a0a05;
+    --bg-400:#fcfdfa;
+    --bg-300:#fdfefc;
+    --bg-200:#fefefd;
+    --bg-100:#ffffff;
+    --bg-600:#dcddda;
+    --bg-700:#bebebc;
+    --bg-800:#9f9f9e;
+    --bg-900:#808080;
+    --black-500: #0a0a05;
     --text-color-500: #282e33;
     --text: 'Parkinsans';
+    --text-title:'Ubuntu';
+    --text-content:'Saira'
 }
 @font-face {
     font-family:"Parkinsans" ;
     src: url("../font/Parkinsans.ttf");
+}
+@font-face {
+    font-family:"Ubuntu" ;
+    src: url("../font/Ubuntu.ttf");
+}
+@font-face {
+    font-family:"Saira" ;
+    src: url("../font/Saira.ttf");
 }
 *{
     margin: 0;
