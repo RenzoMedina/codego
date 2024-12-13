@@ -12,6 +12,26 @@ const {class : className, name, url}= Astro.props
         font-weight: 600;
         border: 1px solid #FFFFFF;
         transition: all .2s ease;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .default{
+        background: var(--primary);
+        color: var(--primary-800);
+        &:hover{
+            background: none;
+            border-color: var(--primary-800);
+        }
+    }
+    .ghost-default{
+        background: none;
+        color: var(--primary-700);
+        border-color: var(--primary-800);
+        &:hover{
+            background: var(--primary);
+            border-color: var(--primary);
+        }
     }
     .accent{
         background: var(--accent);
@@ -38,6 +58,24 @@ const {class : className, name, url}= Astro.props
         &:hover{
             background: var(--accent-100);
             color:var(--accent-600)
+        }
+    }
+    .secondary{
+        background: var(--secondary);
+        color: var(--secondary-800);
+        &:hover{
+            background: none;
+            border-color: var(--secondary-800);
+        }
+    }
+    .ghost-secondary{
+        background: none;
+        color: var(--secondary-800);
+        border-color: var(--secondary-800);
+        &:hover{
+            background: var(--secondary);
+            border-color: var(--secondary);
+
         }
     }
 </style>
