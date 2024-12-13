@@ -1,0 +1,22 @@
+---
+import CardServices from "./CardServices.astro"
+---
+<section>
+    <div class="services">
+        <div class="service-title">
+            <p class="title">Servicios</p>
+        </div>
+        <div class="card">
+            <CardServices  title ="Rediseño web" content={["list", "list"]}/>
+        </div>
+    </div>
+</section>
+<style>
+     section{
+        background: var(--white-500);  
+        margin-top: .98rem;
+    }
+    .services{
+        padding: 0 5.6rem;
+    }
+</style>
