@@ -1,0 +1,20 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+<div class="social">
+    <Icon name={"facebook"}/>
+    <Icon name={"instagram"}/>
+    <Icon name={"whatsApp"}/>
+</div>
+<style>
+    .social{
+        display: flex;
+        align-items: center;
+    }
+    [data-icon]{
+        font-size: 1.7rem;
+        margin: 1.5rem;
+        margin-right: 1em;
+        color: var(--bg-800);
+    }
+</style>

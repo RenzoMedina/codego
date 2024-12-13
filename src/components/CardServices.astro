@@ -1,0 +1,35 @@
+---
+interface Props {
+    id: string,
+  title: string;
+  content: string[];
+}
+const {id,title, content} = Astro.props
+---
+<div class="card-services" id={id}>
+    <p>{title}</p>
+    <ul>
+        {content.map((item) => (
+            <li>{item}</li>
+        ))}
+    </ul>
+</div>
+<style>
+    .card-services{
+        font-family: var(--text);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        margin-bottom: 20px;
+    }
+    .card-services p{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--text-color-500);
+        margin-bottom: 10px;
+    }
+    .card-services ul{
+        font-size: .87rem;
+    }
+</style>

@@ -3,7 +3,7 @@ import Card from "./Card.astro";
 ---
 <secction>
     <div class="about" id="about">
-        <p class="about-title">Acerca de nosotros</p>
+        <p class="title">Acerca de nosotros</p>
         <div class="card-About">
             <Card title="Vision" content="En code-go, nuestra misión es ser el socio de confianza de nuestros clientes en el mundo digital, brindando soluciones web innovadoras y a la medida que superen sus expectativas" url='../src/assets/img/vision.png'/>
             <Card title="Mision" content="Nuestra visión es construir un futuro digital donde cada negocio tenga una presencia en línea sólida y efectiva, y code-go sea el aliado estratégico para lograrlo" url='../src/assets/img/mision.png' />
@@ -19,17 +19,11 @@ import Card from "./Card.astro";
     .about{
         padding: 0 5.6rem;
         box-shadow: 1px -1px 13px var(--bg-600);
-        .about-title{
-            font-family: var(--text);
-            font-size: 2rem;
-            font-weight: 600; 
-            padding: 1rem 0 0;       
-        }
     }
     .card-About{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
-        
+        padding-bottom: 1.5rem;
     }
 </style>
