@@ -1,8 +1,7 @@
 ---
-const {url, title,alt, content} = Astro.props
+const {title, content} = Astro.props
 ---
 <div class="card">
-    <img src={url} alt={alt}>
     <p>{title}</p>
     <p>{content}</p>
 </div>
