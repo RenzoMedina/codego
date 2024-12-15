@@ -1,6 +1,8 @@
 ---
 import { APP_NAME } from "../assets/js/data"
 import Button from "./Button.astro"
+import CardImg from "./CardImg.astro"
+import ImageMain from "../assets/img/imagen-main.png"
 ---
 <secction class="main">
     <div class="cardMain">
@@ -10,7 +12,7 @@ import Button from "./Button.astro"
         <Button name="Contáctanos" url="/" class="accent"/>
     </div>
     <div class="cardMain">
-        <img src="/src/assets/img/imagen-main.png" alt="imageMain">
+      <CardImg url={ImageMain} alt="imagen prinicipal" width="450" />
     </div>
 </secction>
 
@@ -51,7 +53,6 @@ import Button from "./Button.astro"
     }
 
     .cardMain img{
-        width: 400px;
         animation: up infinite 3s ease-in-out;
     }
     @keyframes up {
